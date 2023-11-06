@@ -86,3 +86,52 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+
+// Total the number of Months in the finances array
+
+var uniqueMonths = {}; // Using an object to store unique months
+
+for (var i = 0; i < finances.length; i++) {
+  var entry = finances[i];
+  var monthYear = entry[0];
+}
+
+var totalUniqueMonths = Object.keys(uniqueMonths).length;
+console.log("Total months: " + finances.length);
+
+
+// Create an algorithm to find the total Profit/Loss
+var uniqueProfit= {}
+for (var i = 0; i < finances.length; i++) {
+  var profit = finances[i];
+  var monthYear = entry[0];
+}
+
+
+
+var sumOfProfitLoss = 0;
+
+for (var i = 0; i < finances.length; i++) {
+       var profitOrLoss = finances[i][1];
+       sumOfProfitLoss = sumOfProfitLoss + profitOrLoss;
+}
+console.log("Total Profit or Loss :"+ sumOfProfitLoss)
+
+  // largest loss in the finance array
+   let largest = finances[0][1]; 
+
+   for (let i = 1; i < finances.length; i++) {
+       if (finances[i][1] > largest) {
+           largest = finances[i][1];
+       }
+   }
+console.log("The largest loss is:"+ largest)
+
+   let lowest = finances[0][1]// Assume the first element is the lowest
+   for (let i = 1; i < finances.length; i++) {
+       if (finances[i][1] < lowest) {
+           lowest = finances[i][1];
+       }
+   }
+  console.log("The lowest is:"+ lowest)
